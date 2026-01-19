@@ -1,0 +1,39 @@
+//Reverse words at place of a string
+
+import java.util.*;
+
+class ReverseEachWord {
+
+	public String ReverseIt(String str) {
+
+		String words[] = str.split(" ");
+
+		StringBuilder result = new StringBuilder();
+
+		for (String i : words) {
+			StringBuilder sb = new StringBuilder(i);
+			result.append(sb.reverse()).append(" ");
+		}
+
+		return result.toString();
+	}
+}
+
+
+public class Main
+{
+
+
+	public static void main(String[] args) {
+
+		Scanner sc= new Scanner(System.in);
+		String str = sc.nextLine();
+
+		ReverseEachWord obj = new ReverseEachWord();
+
+		String ans=obj.ReverseIt(str);
+
+		System.out.println("Hello World");
+		System.out.println(ans);
+	}
+}
