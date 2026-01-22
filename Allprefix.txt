@@ -1,0 +1,27 @@
+
+
+import java.util.*;
+
+class Prefix {
+
+	public void AllPrefix(String arr)
+	{
+		int j = arr.length()-1;
+		int i=0;
+		while(j>i)
+		{
+			System.out.println(arr.substring(i,j));
+			j--;
+		}
+	}
+}
+public class Main
+{
+	public static void main(String[] args) {
+
+		String st="ABCDABCAB";
+		Prefix obj = new Prefix();
+		obj.AllPrefix(st);
+
+	}
+}
