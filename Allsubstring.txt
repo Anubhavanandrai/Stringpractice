@@ -1,0 +1,28 @@
+
+
+import java.util.*;
+
+class Substrings {
+
+	public void AllSubstring(String arr)
+	{
+		int len = arr.length();
+		for(int i=0; i<len; i++) {
+			for(int j=i; j<len; j++) {
+				System.out.println(arr.substring(i,j));
+			}
+
+		}
+
+	}
+}
+public class Main
+{
+	public static void main(String[] args) {
+
+		String st="ABCDA";
+		Substrings obj = new Substrings();
+		obj.AllSubstring(st);
+
+	}
+}
