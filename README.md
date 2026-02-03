@@ -22,3 +22,10 @@ Split--means spliting a sentence of different basis
 "[.\\s\\,]" if wants to implement multiple splitting rule.
 
 
+Conversion	Method
+int → String	String.valueOf(i)
+String → int	Integer.parseInt(s)
+
+From	To	How
+String	StringBuffer	new StringBuffer(s)
+StringBuffer	String	sb.toString()
