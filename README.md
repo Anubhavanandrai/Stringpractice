@@ -29,3 +29,6 @@ String → int	Integer.parseInt(s)
 From	To	How
 String	StringBuffer	new StringBuffer(s)
 StringBuffer	String	sb.toString()
+int x =s.charAt(i) - 'a';  this will make character to integer
+char an= (char)(z + 'a'); this is reverse
+
