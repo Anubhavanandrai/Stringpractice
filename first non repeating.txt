@@ -1,0 +1,46 @@
+
+// Find first non repeating Character 
+//if i will write  char[] c=new char[5];..........elements will initaialise with 0 value
+
+
+import java.util.*;
+
+class FirstNonRepeating{
+    
+    public char NonRepeating(String s){
+     
+    int len=s.length() -1;   
+    int c[]= new int[26];
+     int z=0;
+    
+    for(int i=0;i<=len;i++)
+    {
+       int x =s.charAt(i) - 'a';
+       c[x]=c[x]+1;
+    }
+    
+    for(int i=0;i<=25;i++)
+    {
+        if(c[i]==1){
+           z=i; 
+           break;
+        }
+    }
+    
+    char an= (char)(z + 'a');
+    return an;
+    }
+    
+}
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    String s = "geeksforgeeks";
+	    FirstNonRepeating obj = new FirstNonRepeating();
+	     char ans = obj.NonRepeating(s);
+		System.out.println(ans);
+	}
+}
