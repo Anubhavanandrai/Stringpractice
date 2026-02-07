@@ -1,0 +1,52 @@
+
+//Check for anagram
+
+import java.util.*;
+
+class Anagram {
+
+    public boolean AnagramOrNot(String s1, String s2) {
+
+        if (s1.length() != s2.length()) {
+            return false;
+        }
+
+        HashMap<Character, Integer> map = new HashMap<>();
+
+
+        for (int i = 0; i < s1.length(); i++) {
+            char c = s1.charAt(i);
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+
+
+        for (int i = 0; i < s2.length(); i++) {
+            char c = s2.charAt(i);
+
+            if (!map.containsKey(c)) {
+                return false;
+            }
+
+            map.put(c, map.get(c) - 1);
+
+            if (map.get(c) == 0) {
+                map.remove(c);
+            }
+        }
+
+        return map.isEmpty();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        String s1 = "geeksforgeeks";
+        String s2 = "egeksofrgekes";
+
+        Anagram obj = new Anagram();
+        boolean ans = obj.AnagramOrNot(s1, s2);
+
+        System.out.println(ans);
+    }
+}
