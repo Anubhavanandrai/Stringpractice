@@ -35,4 +35,4 @@ char an= (char)(z + 'a'); this is reverse
 
 KMP Algorithm:
 
-Only building LPS array is hard 
+Only building LPS array is hard generally it has 3 rules which we needs to follow
