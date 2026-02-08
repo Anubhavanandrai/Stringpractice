@@ -32,3 +32,7 @@ StringBuffer	String	sb.toString()
 int x =s.charAt(i) - 'a';  this will make character to integer
 char an= (char)(z + 'a'); this is reverse
 
+
+KMP Algorithm:
+
+Only building LPS array is hard 
