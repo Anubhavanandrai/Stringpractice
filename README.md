@@ -36,3 +36,19 @@ char an= (char)(z + 'a'); this is reverse
 KMP Algorithm:
 
 Only building LPS array is hard generally it has 3 rules which we needs to follow
+
+while (i < n) {
+            if (pattern.charAt(i) == pattern.charAt(len)) {
+                len++;
+                lps[i] = len;
+                i++;
+            } else {
+                if (len != 0) {
+                    len = lps[len - 1]; // fallback
+                } else {
+                    lps[i] = 0;
+                    i++;
+                }
+            }
+        }
+remember this and you are good to go
