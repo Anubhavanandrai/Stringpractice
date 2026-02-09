@@ -1,0 +1,34 @@
+class Palindrome {
+
+    public int BuildPalindrome(String st) {
+        int n = st.length();
+
+                for (int i = n; i >= 0; i--) {
+            if (isPalindrome(st, 0, i - 1)) {
+                return n - i;             }
+        }
+
+        return n - 1;     }
+
+
+    private boolean isPalindrome(String st, int l, int r) {
+        while (l < r) {
+            if (st.charAt(l) != st.charAt(r)) {
+                return false;
+            }
+            l++;
+            r--;
+        }
+        return true;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        String str = "ABC";
+        Palindrome obj = new Palindrome();
+        int ans = obj.BuildPalindrome(str);
+        System.out.println(ans + " Min char to add");
+    }
+}
