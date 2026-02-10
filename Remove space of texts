@@ -14,16 +14,12 @@ class RemoveSpace {
 			StringBuilder sb = new StringBuilder(i);
 			result.append(sb);
 		}
-
 		return result.toString();
 	}
 }
 
-
 public class Main
 {
-
-
 	public static void main(String[] args) {
 
 		Scanner sc= new Scanner(System.in);
