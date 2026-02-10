@@ -1,0 +1,37 @@
+//Remove space between texts
+
+import java.util.*;
+
+class RemoveSpace {
+
+	public String RemoveExtraSpace(String str) {
+
+		String words[] = str.split(" ");
+
+		StringBuilder result = new StringBuilder();
+
+		for (String i : words) {
+			StringBuilder sb = new StringBuilder(i);
+			result.append(sb);
+		}
+
+		return result.toString();
+	}
+}
+
+
+public class Main
+{
+
+
+	public static void main(String[] args) {
+
+		Scanner sc= new Scanner(System.in);
+		String str = sc.nextLine();
+
+		RemoveSpace obj = new RemoveSpace();
+
+		String ans=obj.RemoveExtraSpace(str);
+		System.out.println(ans);
+	}
+}
