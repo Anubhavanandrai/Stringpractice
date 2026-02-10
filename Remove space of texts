@@ -6,11 +6,11 @@ class RemoveSpace {
 
 	public String RemoveExtraSpace(String str) {
 
-		String words[] = str.split(" ");
+		String word[] = str.split(" ");
 
 		StringBuilder result = new StringBuilder();
 
-		for (String i : words) {
+		for (String i : word) {
 			StringBuilder sb = new StringBuilder(i);
 			result.append(sb);
 		}
