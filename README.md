@@ -19,7 +19,7 @@ Split--means spliting a sentence of different basis
 \\,-->on basis of comma
 (" ") split on basis of space 
 ("") split on basis of letter/character becuase "" no space between it.
-"[.\\s\\,]" if wants to implement multiple splitting rule.
+"[.\\s\\,]" if wants to implement multiple splitting rule
 
 
 Conversion	Method
