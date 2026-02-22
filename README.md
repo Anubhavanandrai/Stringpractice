@@ -51,4 +51,4 @@ while (i < n) {
                 }
             }
         }
-remember this and you are good to go
+remember this and you are good to proceed
