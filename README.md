@@ -11,7 +11,7 @@ String s ="Anubhav";
 s.substring(index starting , index ending)
 starting index is inclusive and ending is non exclusive.
 
-Split--means spliting a sentence of different basis
+Split--means spliting a sentence of different basi
 \s-->it is wrong because in java \ is refered as stop 
 \\s--> means stop and the split on basis of \s
 
