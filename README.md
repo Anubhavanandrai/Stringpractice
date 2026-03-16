@@ -1,4 +1,4 @@
-# Stringpractice
+# Stringpractie
 
 Take input:
 Scanner sc= new Scanner()
