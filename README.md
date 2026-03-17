@@ -7,7 +7,7 @@ sc.nextLine()-----> whole line is read
 StringBuffer sc= new StringBuffer();
 
 For substrings:
-String s ="Anubhav";
+String s ="Anubhaav";
 s.substring(index starting , index ending)
 starting index is inclusive and ending is non exclusive.
 
