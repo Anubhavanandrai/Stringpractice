@@ -16,7 +16,7 @@ Split--means spliting a sentence of different basi
 \\s--> means stop and the split on basis of \s
 
 
-\\,-->on basis of commma
+\\,-->on basis of comma
 (" ") split on basis of space 
 ("") split on basis of letter/character becuase "" no space between it.
 "[.\\s\\,]" if wants to implement multiple splitting rule
