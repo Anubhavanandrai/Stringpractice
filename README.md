@@ -41,7 +41,7 @@ while (i < n) {
             if (pattern.charAt(i) == pattern.charAt(len)) {
                 len++;
                 lps[i] = len;
-                i++;
+                i++
             } else {
                 if (len != 0) {
                     len = lps[len - 1]; // fallback
