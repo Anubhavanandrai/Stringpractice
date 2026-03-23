@@ -1,6 +1,6 @@
 # Stringpractice
 
-Take input:
+Tak input:
 Scanner sc= new Scanner()
 sc.next()---->Just a single word is read
 sc.nextLine()-----> whole line is read
